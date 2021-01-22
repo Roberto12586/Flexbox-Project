@@ -1,0 +1,390 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box; 
+}
+
+@font-face{
+    font-family: "zillaSlab";
+    src: url(fonts/ZillaSlab-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+font-family: zillaSlab;
+}
+
+nav,ul{
+    list-style: none;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+    color:white;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+    
+    
+}
+
+header h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    
+}
+
+header nav ul{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+}
+
+header nav ul li{
+    margin:0 15px;
+    
+}   
+
+
+header nav ul li:first-child{
+    margin-left: 0;
+
+}
+
+header nav ul li:last-child{
+    margin-right: 0;
+}
+
+
+@media (max-width:1000px){
+    header{
+            padding: 20px 50px;
+    }
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header nav ul li{
+        margin: 0 7px;
+    }
+}
+
+/*Banner*/
+
+section{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+
+@media (max-width:1000px){
+    section{
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width:600px){
+    section{
+        padding: 125px 30px;
+    }
+}
+
+/*revisar*/
+section p{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+
+}
+
+.banner-area{
+    position: relative;
+    justify-content: center;
+    min-height: 900px;
+    color:white;
+    text-align: center;
+}
+
+.banner-area .banner-img{
+    background: url(img/JcV8Ky.jpg);
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+  
+
+}
+
+.banner-area .banner-img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+
+}
+
+.banner-area h1{
+    margin-bottom: 15px;
+    font-size: 70px;
+    font-weight: bold;
+
+}
+
+.banner-area h2{
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+.banner-area a.banner-button{
+    padding: 15px 35px;
+    background-color: rgb(82, 177, 106);
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: black;
+}
+
+@media (max-width:800px){
+    .banner-area{
+        min-height: 600px;
+
+    }
+    .banner-area h1{
+        font-size: 38px;
+
+    }
+    .banner-area h2{
+        font-size: 20px;
+    }
+    .banner-area a.banner-button{
+        padding: 15px 40px;
+    }
+
+}
+
+
+/*about area*/
+
+.about-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content li{
+    padding: 20px;
+    height: 290px;
+    background-clip: content-box;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+}
+
+.about-left{
+    flex-basis: 40%;
+    background-image: url(img/Landscape-9.jpg);
+}
+
+.about-right{
+    flex-basis: 60%;
+}
+
+.about-right p {    /*sustituye a about area p*/
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.about-right h2{
+    margin-bottom: 3%;
+}
+
+.about-button{
+    padding: 15px 35px;
+    background:rgb(82, 177, 106);
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 1000px){
+    .about-left,
+    .about-right{
+        flex-basis: 100%;
+    }
+
+    .about-content li{
+        padding: 8px;
+    }
+}
+
+
+/*Services*/
+
+.services-area{
+    background: #dddddd;
+}
+
+ul.services-content{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.services-content li{
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.services-content li i{
+    font-size: 50px;
+    color: rgb(82, 177, 106);
+    margin-bottom:25px;
+
+}
+
+.services-content li h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.services-content li p{
+    margin: 0;
+
+}
+
+@media (max-width:1000px){
+    .services-content li{
+        flex-basis:100%;
+        margin-bottom: 65px;
+    }
+    .services.content li:last-child{
+        margin-bottom: 0;
+    }
+    .services-content li p{
+        padding: 0;
+    }
+}
+
+
+/*Contact*/
+
+#contact{
+    background:#fff;
+}
+
+ul.contact{
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.contact li{
+    padding: 0 30px;
+    text-align: center;
+    flex-basis: 33%;
+}
+
+.contact li i{
+    font-size: 50px;
+    color: rgb(82, 177, 106);
+    margin-bottom:25px;
+}
+
+contact li p{
+    margin: 0;
+}
+
+@media (max-width:1000px){
+    .contact li{
+        flex-basis: 100%;
+        margin-bottom: 65px;
+    }
+    .content li:last-child{
+        margin-bottom: 0;
+    }
+    .content li p{
+        padding: 0;
+    }
+}
+
+/*Footer*/
+footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color:#fff;
+    background: #000000;
+    padding: 60px 0;
+
+}
