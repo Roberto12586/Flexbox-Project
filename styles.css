@@ -188,6 +188,9 @@ section p{
         min-height: 938px;
 
     }
+    .banner-img{
+        top: 200px;
+    }
     .banner-area h1{
         font-size: 38px;
 
