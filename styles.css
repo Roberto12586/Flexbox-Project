@@ -361,6 +361,9 @@ contact li p{
 }
 
 @media (max-width:1000px){
+    #contact{
+    background:#fff;
+}
     .contact li{
         flex-basis: 100%;
         margin-bottom: 65px;
