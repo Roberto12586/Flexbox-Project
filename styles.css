@@ -339,7 +339,7 @@ section p{
     animation: showIcon 500ms linear;
 }
 
-@media (max-width:1000px){
+@media (max-width:900px){
     .work{
         flex-grow: 1;
         margin-bottom: 20px;
