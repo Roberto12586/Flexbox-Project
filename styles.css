@@ -59,10 +59,17 @@ header nav ul{
     
 }
 
-header nav ul li{
-    margin:0 15px;
-    
+header nav ul li a{
+    margin-right:15px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 300ms;
 }   
+
+header nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
 
 
 header nav ul li:first-child{
@@ -148,6 +155,7 @@ section p{
 
 }
 
+
 .banner-area .banner-img:after{
     content: '';
     position: absolute;
@@ -175,21 +183,28 @@ section p{
 }
 
 
-.banner-area a.banner-button{
+.banner-button{
+    font-size: 20px;
     padding: 15px 35px;
-    background-color: rgb(82, 177, 106);
+    background:rgb(82, 177, 106);
     border-radius: 50px;
     text-transform: uppercase;
-    color: black;
+    color: white;
+    transition: all 100ms;
+}
+.banner-button:hover{
+    border: 1px solid white;
+    font-weight: bolder;
 }
 
 @media (max-width:800px){
     .banner-area{
-        min-height: 938px;
+        min-height: 900px;
 
     }
     .banner-img{
         top: -50px;
+        left: 0;
     }
     .banner-area h1{
         font-size: 38px;
@@ -244,7 +259,7 @@ section p{
     padding-left: 0;
 }
 
-.section-title{
+.subtitle{
     text-transform: uppercase;
     font-size: 50px;
     margin-bottom: 5%;
@@ -260,6 +275,10 @@ section p{
     border-radius: 50px;
     text-transform: uppercase;
     color: #fff;
+    transition: all 100ms;
+}
+.about-button:hover{
+    font-weight: bolder;
 }
 
 @media (max-width: 1000px){
@@ -275,67 +294,100 @@ section p{
 
 
 /*Services*/
-
 .services-area{
     background: #dddddd;
-}
+    }
 
-ul.services-content{
-    width: 100%;
+    
+
+.projects{
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: space-between;
+    flex-basis: 100%;
 }
 
-.services-content li{
-    padding: 0 30px;
-    flex-basis: 33%;
+
+.work{
+    flex-grow: 0;
+    flex-basis: 310px; 
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.work:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid  rgb(82, 177, 106);
+}
+
+.work h3{
+    font-size: 50px;
+    color: rgb(82, 177, 106);
     text-align: center;
 }
 
-.services-content li i{
-    font-size: 50px;
-    color: rgb(82, 177, 106);
-    margin-bottom:25px;
-
+.work:hover h3{
+    animation: showIcon 500ms linear;
 }
 
-.services-content li h4{
-    font-size: 20px;
-    margin-bottom: 25px;
-}
-
-.services-content li p{
-    margin: 0;
-
-}
-
-@media (max-width:1000px){
-    .services-content li{
-        flex-basis:100%;
-        margin-bottom: 65px;
+@keyframes showIcon{
+    from{ 
+        transform: translateY(-200%);
     }
-    .services.content li:last-child{
-        margin-bottom: 0;
-    }
-    .services-content li p{
-        padding: 0;
+    to{
+        transform: translateY(0%);
     }
 }
 
+.work h4{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.work:hover h4{
+    animation: showTitle 500ms linear;
+}
+
+@keyframes showTitle{
+    from{ 
+        transform: translateY(-400%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.work p{
+    text-align: justify;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.work:hover p{
+    animation: showText 500ms linear;
+}
+
+@keyframes showText{
+    from{ 
+        transform: translateX(-400%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
 
 /*Contact*/
 
-#contact{
-    background:#fff;
-}
-
-ul.contact{
+.contact{
     width: 100%;
     display: -webkit-flex;
     display: -moz-flex;
@@ -356,17 +408,20 @@ ul.contact{
 .contact li i{
     font-size: 50px;
     color: rgb(82, 177, 106);
+    margin-top: 10px;
     margin-bottom:25px;
 }
 
-contact li p{
+.google{
+    width: 90%;
+    height: 100%;
+}
+
+.contact li p{
     margin: 0;
 }
 
 @media (max-width:1000px){
-    #contact{
-    background:#fff;
-}
     .contact li{
         flex-basis: 100%;
         margin-bottom: 65px;

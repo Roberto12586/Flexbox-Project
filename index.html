@@ -16,13 +16,13 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="banner-area">
+    <section class="banner-area" id="banner">
         <div class="banner-img"></div>
         <h1>Flexbox website</h1>
         <h2>Responsive web design</h2>
@@ -30,7 +30,7 @@
     </section>
 
     <section class="about-area" id="about">
-        <h3 class="section-title">About us</h3>
+        <h3 class="subtitle">About us</h3>
         <ul class="about-content">
             <li class="about-left"></li>
             <li class="about-right">
@@ -44,49 +44,59 @@
     </section>
 
     <section class="services-area" id="services">
-        <h3 class="section-title">Services</h3>
-        <ul class="services-content">
-            <li>
-                <i class="fa fa-laptop"></i>
-                <h4>Website Development</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi tempore aliquam doloremque
-                    ex magni, ipsa voluptates inventore, eius a tenetur iusto, iure tempora mollitia sequi quae at sed!
-                    Harum?</p>
-            </li>
-            <li>
-                <i class="fa fa-magic"></i> 
-                <h4>SEO (Search Engine Optimization)</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi tempore aliquam doloremque
-                    ex magni, ipsa voluptates inventore, eius a tenetur iusto, iure tempora mollitia sequi quae at sed!
-                    Harum?</p>
-            </li>
-            <li>
-                <i class="fa fa-paint-brush"></i>
-                <h4>Website Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi tempore aliquam doloremque
-                    ex magni, ipsa voluptates inventore, eius a tenetur iusto, iure tempora mollitia sequi quae at sed!
-                    Harum?</p>
-            </li>
-        </ul>
+        <h3 class="subtitle">Services</h3>
+        <div class="projects">
+            <div class="work">
+                <h3><i class="fa fa-laptop"></i></h3>
+                <h4>Web Development</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, ipsam. Delectus voluptatem
+                    eveniet architecto alias quas quasi labore sequi illum qui ad vel quo, ratione eum nemo quidem
+                    recusandae placeat.</p>
+            </div>
+            <div class="work">
+                <h3><i class="fa fa-magic"></i></h3>
+                <h4>SEO</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, ipsam. Delectus voluptatem
+                    eveniet architecto alias quas quasi labore sequi illum qui ad vel quo, ratione eum nemo quidem
+                    recusandae placeat.</p>
+            </div>
+            <div class="work">
+                <h3><i class="fa fa-paint-brush"></i></h3>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, ipsam. Delectus voluptatem
+                    eveniet architecto alias quas quasi labore sequi illum qui ad vel quo, ratione eum nemo quidem
+                    recusandae placeat.</p>
+            </div>
+            <div class="work">
+                <h3><i class="fa fa-cog"></i></h3>
+                <h4>UX/UI</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, ipsam. Delectus voluptatem
+                    eveniet architecto alias quas quasi labore sequi illum qui ad vel quo, ratione eum nemo quidem
+                    recusandae placeat.</p>
+            </div>
+        </div>
     </section>
 
     <section class="contact-area" id="contact">
-        <h3 class="section-title">Contact</h3>
+        <h3 class="subtitle">Contact</h3>
         <ul class="contact">
             <li>
-                <i class="fa fa-map-marker"></i>
-                <p>Calle Falsa 123 <br>Springfield</p>
+                <a href="tel:675750446"><i class="fa fa-phone"></i></a>
+                <p>+34 675 750 446</p>
             </li>
+            
             <li>
-                <i class="fa fa-phone"></i>
-                <p>+34 654852654</p>
+                <iframe class="google"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.963899430315!2d2.081718366858787!3d41.353138389633784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49946319bf58b%3A0xdaf34ad3139f44f0!2sPasseig%20dels%20Ferrocarrils%20Catalans%2C%20171-161%2C%2008940%20Cornell%C3%A0%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1611320121248!5m2!1ses!2ses"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </li>
+            
             <li>
-                <i class="fa fa-envelope"></i>
+                <a href="mailto:roberto.prado.lopez@protonmail.com"><i class="fa fa-envelope"></i></a>
                 <p>info@prado.com</p>
             </li>
-        </ul>      
-
+        </ul>
     </section>
 
     <footer>
@@ -96,4 +106,3 @@
 </body>
 
 </html>
-
