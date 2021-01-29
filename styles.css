@@ -328,6 +328,7 @@ section p{
     border: 2px solid  rgb(82, 177, 106);
 }
 
+
 .work h3{
     font-size: 50px;
     color: rgb(82, 177, 106);
@@ -336,6 +337,16 @@ section p{
 
 .work:hover h3{
     animation: showIcon 500ms linear;
+}
+
+@media (max-width:1000px){
+    .work{
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+    .work h3{
+        margin-top: 10px;
+    }
 }
 
 @keyframes showIcon{
