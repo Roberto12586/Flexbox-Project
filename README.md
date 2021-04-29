@@ -7,7 +7,7 @@ Es una página sencilla con una pantalla inicial optimizada para 1080 y seccione
 
 #
 
-This is a project that aims to practice flexbox and responsive.
+This is a project to practice flexbox and responsive.
 
 It is a simple page with an initial screen optimized for 1080 and sections with animations and effects in css.
 
