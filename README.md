@@ -14,7 +14,7 @@ It is a simple page with an initial and sections with animations and effects in 
 
 
 
-## Screenshots
+## Demo
 ![jijh](https://user-images.githubusercontent.com/38353024/119827828-dbe0a980-bef9-11eb-8418-fda94c98d9b7.gif)
 
 
