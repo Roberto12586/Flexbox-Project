@@ -19,8 +19,3 @@ It is a simple page with an initial and sections with animations and effects in 
 
 
   
-## Authors
-
-- [Roberto Prado](https://github.com/Roberto12586/)
-
-  
