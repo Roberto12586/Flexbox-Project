@@ -16,7 +16,6 @@ It is a simple page with an initial and sections with animations and effects in 
 
 ## Screenshots
 ![jijh](https://user-images.githubusercontent.com/38353024/119827828-dbe0a980-bef9-11eb-8418-fda94c98d9b7.gif)
-![Captura](https://user-images.githubusercontent.com/38353024/118358597-d68d7180-b57f-11eb-906b-bfaebad90961.JPG)
 
 
   
